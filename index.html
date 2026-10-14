@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sanjid Reza | Data Analyst Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F3EBDD;--surface:#FBF7EF;--ink:#2E2118;--muted:#6E5C4C;--line:#DDCFB9;--accent:#A14E22;--tag:#E9D5B8;--tagink:#5C3417;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#2B2119;--surface:#382C22;--ink:#F3EADB;--muted:#BCA992;--line:#50402F;--accent:#DD8A55;--tag:#5A4028;--tagink:#F5DFC2}}
+:root[data-theme="dark"]{--bg:#2B2119;--surface:#382C22;--ink:#F3EADB;--muted:#BCA992;--line:#50402F;--accent:#DD8A55;--tag:#5A4028;--tagink:#F5DFC2}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Sora,system-ui,sans-serif;line-height:1.15;margin:0}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px;flex-wrap:wrap}
+nav b{font-family:Sora,sans-serif}
+nav div{display:flex;gap:22px}
+nav a{color:var(--ink);text-decoration:none;font-weight:500}
+nav a:hover{color:var(--accent)}
+.hero{padding:72px 0 80px}
+.hero h1{font-size:clamp(2.2rem,5.5vw,3.8rem);letter-spacing:-.02em}
+.hero p{color:var(--muted);max-width:52ch;margin:20px 0 28px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 22px;border-radius:8px;font-weight:500;text-decoration:none;border:2px solid var(--accent)}
+.btn.p{background:var(--accent);color:var(--bg)}
+.btn.s{color:var(--accent)}
+.plot{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:14px}
+.plot svg{width:100%;height:auto;display:block}
+.plot small{color:var(--muted);display:block;padding:6px 6px 0;font-size:.82rem}
+.dot{fill:var(--accent);opacity:.8}
+.fit{stroke:#E0892B;stroke-width:3;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw 1.6s .4s ease-out forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.fit{animation:none;stroke-dashoffset:0}html{scroll-behavior:auto}}
+section{padding:56px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:1.9rem;margin-bottom:28px}
+.about{display:grid;grid-template-columns:1.4fr 1fr;gap:40px}
+.about p{margin:0 0 14px;max-width:62ch}
+.facts{margin:0;padding:0;list-style:none}
+.facts li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:12px}
+.facts span{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.skills h3{font-size:1.05rem;margin-bottom:10px}
+.skills p{margin:0;color:var(--muted)}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:26px;margin-bottom:20px;display:grid;grid-template-columns:1.5fr 1fr;gap:28px}
+.proj h3{font-size:1.3rem;margin-bottom:8px}
+.proj p{margin:0 0 12px;color:var(--muted)}
+.proj dl{margin:0}
+.proj dt{font-weight:500;font-size:.92rem}
+.proj dd{margin:0 0 10px;color:var(--muted);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
+.tags span{background:var(--tag);color:var(--tagink);border-radius:6px;padding:2px 10px;font-size:.85rem}
+.links{display:flex;gap:16px;font-weight:500}
+.contact p{max-width:56ch;color:var(--muted)}
+footer{padding:32px 0 48px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+.wide{overflow-x:auto}
+@media(max-width:760px){.hero,.about,.proj{grid-template-columns:1fr}.hero{padding-top:24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>Sanjid Reza</b><div><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+
+<header class="hero">
+<div>
+<h1>Data analyst who turns messy data into clear answers.</h1>
+<p>Hi, I'm Sanjid Reza, a data analyst. I work with Python, SQL and machine learning to explore datasets, build models and explain what the results mean.</p>
+<div class="btns"><a class="btn p" href="#projects">See my projects</a><a class="btn s" href="#contact">Get in touch</a></div>
+</div>
+</header>
+</div>
+
+<section id="about"><div class="wrap">
+<h2>About me</h2>
+<div class="about">
+<div>
+<p>I'm a data analyst who enjoys the full workflow: cleaning data, finding patterns, training models and presenting findings in plain language.</p>
+<p>I'm looking for internships and entry-level roles in data analysis and machine learning, and I'm always happy to learn from real-world problems.</p>
+</div>
+<ul class="facts">
+<li><span>Role</span>Data Analyst</li>
+<li><span>Focus</span>Analysis and machine learning</li>
+<li><span>Tools</span>Python, SQL</li>
+<li><span>Based in</span>Dhaka, Bangladesh</li>
+</ul>
+</div>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2>Skills</h2>
+<div class="skills">
+<div><h3>Programming</h3><p>Python, SQL, basic R, Git and GitHub</p></div>
+<div><h3>Data analysis</h3><p>pandas, NumPy, data cleaning, exploratory analysis, statistics</p></div>
+<div><h3>Machine learning</h3><p>scikit-learn, regression, classification, clustering, model evaluation</p></div>
+<div><h3>Visualization</h3><p>Matplotlib, Seaborn, Plotly, Power BI or Tableau</p></div>
+</div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2>Projects</h2>
+
+<article class="proj">
+<div>
+<h3>Titanic Survival Prediction</h3>
+<p>Predict which passengers survived using their age, class, fare and family details. A classic first classification project.</p>
+<div class="tags"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>Classification</span></div>
+</div>
+<dl>
+<dt>Dataset</dt><dd>Titanic on Kaggle</dd>
+<dt>What I do</dt><dd>Handle missing values, engineer features such as family size, train logistic regression and random forest, compare accuracy and F1.</dd>
+<dt>Key takeaway</dt><dd>Add your best score and the top factors here.</dd>
+</dl>
+</article>
+
+<article class="proj">
+<div>
+<h3>House Price Prediction</h3>
+<p>Estimate home prices from size, location and quality features, and explain which features matter most.</p>
+<div class="tags"><span>Python</span><span>Regression</span><span>Feature engineering</span><span>Matplotlib</span></div>
+</div>
+<dl>
+<dt>Dataset</dt><dd>California Housing (scikit-learn) or Ames Housing on Kaggle</dd>
+<dt>What I do</dt><dd>Explore distributions and outliers, fit linear regression and gradient boosting, compare using RMSE and R².</dd>
+<dt>Key takeaway</dt><dd>Add your final error and top predictors here.</dd>
+</dl>
+</article>
+
+<article class="proj">
+<div>
+<h3>Customer Segmentation</h3>
+<p>Group shoppers by income and spending behavior so a business could target each group differently.</p>
+<div class="tags"><span>Python</span><span>K-Means</span><span>Clustering</span><span>Seaborn</span></div>
+</div>
+<dl>
+<dt>Dataset</dt><dd>Mall Customer Segmentation on Kaggle</dd>
+<dt>What I do</dt><dd>Scale features, choose the number of clusters with the elbow method and silhouette score, then describe each segment.</dd>
+<dt>Key takeaway</dt><dd>Add your segment names and recommendations here.</dd>
+</dl>
+</article>
+
+<article class="proj">
+<div>
+<h3>Netflix Content Analysis</h3>
+<p>Explore what Netflix offers: movies versus shows, genres, countries and how the catalog changed over time.</p>
+<div class="tags"><span>Python</span><span>EDA</span><span>Data cleaning</span><span>Plotly</span></div>
+</div>
+<dl>
+<dt>Dataset</dt><dd>Netflix Movies and TV Shows on Kaggle</dd>
+<dt>What I do</dt><dd>Clean dates and categories, split multi-value columns, and build charts for trends by year, genre and country.</dd>
+<dt>Key takeaway</dt><dd>Add your three most interesting findings here.</dd>
+</dl>
+</article>
+
+<article class="proj">
+<div>
+<h3>Movie Review Sentiment Analysis</h3>
+<p>Classify written reviews as positive or negative using basic natural language processing.</p>
+<div class="tags"><span>Python</span><span>NLP</span><span>TF-IDF</span><span>Logistic regression</span></div>
+</div>
+<dl>
+<dt>Dataset</dt><dd>IMDB 50K Movie Reviews on Kaggle</dd>
+<dt>What I do</dt><dd>Clean text, convert it with TF-IDF, train a classifier, and inspect the confusion matrix and misclassified reviews.</dd>
+<dt>Key takeaway</dt><dd>Add your accuracy and the words that drive predictions here.</dd>
+</dl>
+</article>
+</div></section>
+
+<section id="contact"><div class="wrap contact">
+<h2>Contact</h2>
+<p>I'm open to internships, entry-level roles and collaboration. Send me a message and I'll reply soon.</p>
+<div class="links"><a href="mailto:sanjidreza31@gmail.com">sanjidreza31@gmail.com</a></div>
+</div></section>
+
+<div class="wrap"><footer>© 2026 Sanjid Reza. Built with HTML and CSS.</footer></div>
+</body>
+</html>
